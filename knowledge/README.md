@@ -2,8 +2,8 @@
 
 ## Admin Web Console
 ### LFS
-If click "Delete" button on the LFS section of below url, GitHub Enterprise sets the logical deletion flag of below LFS
-* https://<github-enterprise-host>/stafftools/repositories/<org-name>/<repo-name>/large_files?oid=<oid> 
+If click "Delete" button on the LFS section of below LFS url, GitHub Enterprise sets the logical deletion flag of below LFS url.  
+`https://<github-enterprise-host>/stafftools/repositories/<org-name>/<repo-name>/large_files?oid=<oid>`
 
 Within 3 months, can restore the deleted LFS file.
 3 months later, GitHub Enterprise will remove the file from the local disk.
