@@ -5,7 +5,7 @@
 If click "Delete" button on the LFS section of below LFS url, GitHub Enterprise sets the logical deletion flag of below LFS url.  
 `https://<github-enterprise-host>/stafftools/repositories/<org-name>/<repo-name>/large_files?oid=<oid>`
 
-Within 3 months, can restore the deleted LFS file.
+Within 3 months, can restore the deleted LFS file.  
 3 months later, GitHub Enterprise will remove the file from the local disk.
 
 ## API
@@ -35,4 +35,9 @@ If you use this command, you should use this with github-env command.
   ```
   $ github-env bin/runner /home/admin/blobs.rb
   ```
+
+### ghe-console
+You can run the GitHub Rails console.
+
+* full path: /usr/local/bin/ghe-console
 
