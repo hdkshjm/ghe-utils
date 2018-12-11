@@ -54,7 +54,7 @@ Output the top 1000 big size of objects(1 commit file of LFS or GitHub Release)
 Delete objects(1 commit file of LFS or GitHub Release) immediately.
 Please specify the object list file in ENV `OID_FILE`.
 
-Before execute this, please see [listup_object_size.sh](#listup_object_size.sh)
+Before execute this, please see [listup_object_size.sh]##listup_object_sizesh-blobsrb-yaml_to_tsvrb-1)
 
 ### sample
 ```
