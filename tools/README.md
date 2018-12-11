@@ -62,7 +62,7 @@ $ cat /home/admin/oids.txt
 c850ff92fba4891af8b261e2b0a7434a3cdb56bb396d91e31de972469a6e2ebd
 a6df8b81ffb1f360e58fda83b1eab5b2ee5e3ffdafe385a614287f33eb49904b
 
-$ github-env "export OID_FILE='/home/admin/oids.txt'; bin/runner /home/admin/delete_oid.rb"
+$ github-env "export OID_FILE='/home/admin/oids.txt'; bin/runner /home/admin/remove_objects.rb"
 ```
 
 
