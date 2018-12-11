@@ -42,3 +42,27 @@ a6df8b81ffb1f360e58fda83b1eab5b2ee5e3ffdafe385a614287f33eb49904b	1526663471	Git 
 
 You can see detail info on https://[hostname]/stafftools/storage/blobs/[oid] .
 
+
+## listup_object_size.sh, blobs.rb, yaml_to_tsv.rb
+Output the top 1000 big size of objects(1 commit file of LFS or GitHub Release) 
+
+* listup_object_size.sh: main script which calls below
+  * blobs.rb: get object info from GHE Rails and output it to `tools/logs/object_size.yml`
+  * yaml_to_tsv.rb: convet yaml as `tools/logs/object_size.yml` to tsv as `tools/logs/object_size.tsv`
+
+### remove_objects.rb
+Delete objects(1 commit file of LFS or GitHub Release) immediately.
+Please specify the object list file in ENV `OID_FILE`.
+
+Before execute this, please see [listup_object_size.sh](#listup_object_size.sh)
+
+### sample
+```
+$ cat /home/admin/oids.txt
+c850ff92fba4891af8b261e2b0a7434a3cdb56bb396d91e31de972469a6e2ebd
+a6df8b81ffb1f360e58fda83b1eab5b2ee5e3ffdafe385a614287f33eb49904b
+
+$ github-env "export OID_FILE='/home/admin/oids.txt'; bin/runner /home/admin/delete_oid.rb"
+```
+
+
